@@ -4,7 +4,8 @@
         <title>Section 2</title>
         <link rel="stylesheet" href="css/w3.css">
         <style>
-            body {margin: 0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;text-align:center;}
+            body {margin: 0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;text-align:center;color:blue;}
+            
             .container {
   
                 background-color:#595959;
@@ -12,6 +13,7 @@
                 position:fixed;
                 top:0;
                 width: 100%;
+                z-index:10;
 
 
             }
@@ -50,9 +52,9 @@
                 display: none;
                 position: absolute;
                 background-color: #f9f9f9;
-                min-width: 160px;
+                min-width: 200px;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 100;
+                z-index: 2;
                 font-family:'Roboto', sans-serif;
                 top:52px;
             }
@@ -76,20 +78,22 @@
             .main {
                 color:blue;
                 position:absolute;
-                left:15%;
+                left:25%;
+                text-align:center;
+                margin:auto;
             }
         </style>
     </head>
-    <body>
+     <body>
             <div class="container">
-          <a href="index.html">Fabian's Website</a>
-          <a href="index.html">Home</a>
-          <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction()">Portfolio</button>
-            <div class="dropdown-content" id="myDropdown">
-              <a href="project1.html">Project I</a>
-            </div>
-          </div> 
+              <a href="index.html">Fabian's Website</a>
+              <a href="index.html">Home</a>
+              <div class="dropdown">
+                  <button class="dropbtn" onclick="myFunction()">Portfolio</button>
+                  <div class="dropdown-content" id="myDropdown">
+                      <a href="project1.html">Project I</a>
+                  </div>
+            </div> 
         </div>
         <script>
         /* When the user clicks on the button, 
@@ -113,17 +117,15 @@
 
         </div>
             <br><br>
-            
-
+            <div class="main">
+                <h1>Welcome to my Portfolio!</h1>
+                <img src="images/portfolio_2.2.png" width = "800">
             </div>
            <!-- Sidebar -->
-            <div class="w3-sidebar w3-bar-block " style="width:12%;position:absolute;top:52px;color:blue;">
+            <div class="w3-sidebar w3-bar-block " style="width:15%;position:absolute;top:52px;color:blue;">
               <h3 class="w3-bar-item">Table of Contents</h3>
-              <a href="project1.html" class="w3-bar-item w3-button">Project 1 Home</a>
+              <a href="project1.html" class="w3-bar-item w3-button">Project I</a>
             </div>
-        <div class="main">
-                <center><h1>Welcome to Section 2!</h1></center>
-                <img src="images/portfolio_2.gif" height="200" width="1000"/>
-                </div>
+        
     </body>
 </html>
