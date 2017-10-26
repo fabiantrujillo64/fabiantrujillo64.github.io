@@ -69,6 +69,7 @@
             .main {
                 color:blue;
                 position:absolute;
-                left:25%;
+                left:15%;
                 margin:auto;
+                right:0;
             }
