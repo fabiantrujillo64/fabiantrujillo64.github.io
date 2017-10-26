@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fabian Trujillo</title>
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+            <div class="container">
+              <a href="index.html">Fabian's Website</a>
+              <a href="index.html">Home</a>
+              <div class="dropdown">
+                  <button class="dropbtn" onclick="myFunction()">Portfolio</button>
+                  <div class="dropdown-content" id="myDropdown">
+                      <a href="canattack.html">App Inventor Project: Can Attack</a>
+                  </div>
+            </div> 
+            <a href="contact.html">Contact</a>
+        </div>
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+          }
+        }
+        </script>
+        </div>
+          
+
+        </div>
+            <br><br>
+            <div class="main">
+               <h1>Video Demonstration</h1>
+               <video width="500" controls>
+                  <source src="videos/Fabian.mp4" type="video/mp4">
+               </video>
+               <h2>Video Description</h2>
+               <p>Today I will be demonstrating an app that I took part in creating. That app is called Can Attack. As I tap the icon to start the app you are greeted with the branding screen. After five seconds I am now presented with the main menu to navigate around the app. The play button takes me to the main game and the about button takes me to a screen that tells you about our app. Now as I tap on the about button, I am brought to an info screen that tells you how to play the game. To sum up, the main objective is to shoot the evil cans and to avoid shooting the cans that are good. To go back to the main menu, I will tap the back button on the bottom right. To go to the main game now, I tap the play button. The play button takes me to a new screen where there are three cans sitting on the table. The three cans on the table are constantly shuffling around at random from the four varieties of cans. When I tap on the cans, you hear a gunshot sound effect and I feel some vibration feedback as well. As I tap on the evil ones, they turn into ghosts. Next, on the top right, we have a pause button that will pause the game and present me with two buttons. I have the option to resume the game or quit the game by going back to the main menu. Now as I tap the resume button, the cans will appear and start rotating again. As I tap on one of the cans that are good, immediately I am brought to a game over screen. You can either try again by tapping the reset button or go back to the main menu by tapping on the main menu button. I am going to choose to tap the reset button. The reset button will bring me back to the main game and my score will be set back to 0. I get a fresh start and the game plays normally. Now that I am done playing for the day, I will tap the pause button and then tap the main menu button. Doing so will bring a notifier box asking if I am sure I want to go back to the main menu. I will tap yes and I will be brought back to the main menu. 
+               </p>
+            </div>
+           <!-- Sidebar -->
+            <div class="w3-sidebar w3-bar-block " style="width:15%;position:absolute;top:52px;color:blue;">
+              <h3 class="w3-bar-item">Table of Contents</h3>
+              <a href="canattack.html" class="w3-bar-item w3-button">Main Project Page</a>
+              <a href="canattack3.html" class="w3-bar-item w3-button">Written Response</a>
+            </div>
+        
+    </body>
+</html>

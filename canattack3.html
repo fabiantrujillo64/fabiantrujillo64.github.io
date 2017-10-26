@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fabian Trujillo</title>
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+            <div class="container">
+              <a href="index.html">Fabian's Website</a>
+              <a href="index.html">Home</a>
+              <div class="dropdown">
+                  <button class="dropbtn" onclick="myFunction()">Portfolio</button>
+                  <div class="dropdown-content" id="myDropdown">
+                      <a href="project1.html">Project I</a>
+                  </div>
+            </div> 
+            <a href="contact.html">Contact</a>
+        </div>
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+          }
+        }
+        </script>
+        </div>
+          
+
+        </div>
+            <br><br><br>
+            <div class="main">
+                <h1>Written Response</h1>
+                <p>The app my partner and I created is called Can Attack. In the game, you are presented with three cans that are sitting on a table in the middle of a field. The three cans are constantly shuffling around the four varieties of cans that we have. This is meant to challenge the player so they can watch where they shoot. There are two cans that are evil and two that are good. The cans you want to shoot are the evil ones and the ones you want to avoid shooting are the good ones. When you shoot an evil can you get a point, and the game continues until you shoot a good can by mistake. After that, it is game over.	Throughout the process of programming an app, you are bound to run into some things that did not function as intended. For example, an issue that we encountered was the positioning of the can sprites. Whenever you powered off your phone or if the phone went to sleep because of inactivity, when you came back, the x positions of the sprites were set in strange areas. This was not an intended effect; there was no code that moved the positions of the sprites. However, that happened to be the issue. There was no code that kept the sprites to be in a certain position at all times. We resolved this issue by making a mathematical equation that centered one can in the middle. Building off of that we set one can to go on top of the middle can and we shifted it several units to the left. We set another can on top of the middle can and we shifted it several units to the right. We put this into a procedure that we called every time the cans shuffled. Now the cans go back to where they should be no matter the circumstance.  
+                </p>
+            </div>
+           <!-- Sidebar -->
+            <div class="w3-sidebar w3-bar-block " style="width:15%;position:absolute;top:52px;color:blue;">
+              <h3 class="w3-bar-item">Table of Contents</h3>
+              <a href="canattack.html" class="w3-bar-item w3-button">Main Project Page</a>
+              <a href="canattack2.html" class="w3-bar-item w3-button">Video Demonstration</a>
+            </div>
+        
+    </body>
+</html>

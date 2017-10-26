@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fabian Trujillo</title>
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        
+    </head>
+     <body>
+            <div class="container">
+              <a href="index.html">Fabian's Website</a>
+              <a href="index.html">Home</a>
+              <div class="dropdown">
+                  <button class="dropbtn" onclick="myFunction()">Portfolio</button>
+                  <div class="dropdown-content" id="myDropdown">
+                      <a href="canattack.html">App Inventor Project: Can Attack</a>
+                  </div>
+            </div> 
+            <a href="contact.html">Contact</a>
+        </div>
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+          }
+        }
+        </script>
+        </div>
+          
+
+        </div>
+            <br><br><br>
+            <div class="main">
+                <img src="images/logo.PNG" width="700" height="150">
+                <br>
+                <a href="ext_files/CanAttack.apk">Download it for your andriod phone!</a>
+                <br>
+                <a href="ext_files/CanAttack.aia">Source code for App Inventor</a>
+                <h2>Screenshots</h2>
+                <img src="images/scsht1.png" width="800" height="400">
+                <br><br>
+                <img src="images/scsht2.png" width="800" height="400">
+                <br><br>
+                <img src="images/scsht3.png" width="800" height="400">
+                <br><br>
+                <img src="images/scsht4.png" width="800" height="400">
+                <br><br>
+                <img src="images/scsht5.png" width="800" height="400">
+                <br><br>
+                <img src="images/scsht6.png" width="800" height="400">
+                
+            </div>
+           <!-- Sidebar -->
+            <div class="w3-sidebar w3-bar-block " style="width:15%;position:absolute;top:52px;color:blue;">
+              <h3 class="w3-bar-item">Table of Contents</h3>
+              <a href="canattack2.html" class="w3-bar-item w3-button">Video Demonstration</a>
+              <a href="canattack3.html" class="w3-bar-item w3-button">Written Response</a>
+            </div>
+        
+    </body>
+</html>

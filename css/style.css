@@ -1,0 +1,72 @@
+            body {margin: 0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;text-align:center;color:blue;}
+            
+            .container {
+  
+                background-color:#595959;
+                font-family: Franklin Gothic Medium;
+                position:fixed;
+                top:0;
+                width: 100%;
+                z-index: 10;
+            }
+            
+            .container a {
+                float: left;
+                font-size: 16px;
+                color: #3399ff;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            
+            .dropdown {
+                float: left;
+                overflow: hidden;
+            }
+            
+            .dropdown .dropbtn {
+                cursor: pointer;
+                font-size: 16px;    
+                border: none;
+                outline: none;
+                color: #3399ff;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: Franklin Gothic Medium;
+            }
+            
+            .container a:hover, .dropdown:hover .dropbtn {
+                background-color: #4d4d4d;
+            }
+            
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 200px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 2;
+                font-family:'Roboto', sans-serif;
+                top:52px;
+            }
+            
+            .dropdown-content a {
+                float: none;
+                color: #3399ff;
+                padding: 8px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: right;
+            }
+            
+            .dropdown-content a:hover {
+                background-color: #e6e6ff;
+            }
+            
+            .show {
+                display: block !important;
+            }
+            .main {
+                color:blue;
+            }
+            
