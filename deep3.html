@@ -49,13 +49,15 @@
             <br><br>
             <div class="main">
                <h1>Written Response</h1>
-               <p>Coming Soon!</p>
+               <p>Throughout the entire game, people were allowed to put in user input to interact with the game. The user is told what they could type in to continue onto the rest of the game. In one section of the game, there was this part where the user had the choice between getting out of bed or snoozing the alarm and going back to bed. If the user chose to snooze the alarm, they are given the option to input when they should get up again. There was confusion on how to set up a range of times in which the user could input to get up again. Also, there was another issue in which people could put in float values as time too. The simplest way to approach the issue was to set up an if statement that could only take 5,6 and 7 as input. Then, if anything else was put in beside 5,6 and 7 the user would have to try again. </p>
+               <p>I found an issue when the user got to the part where they could choose to take their breakfast upstairs or eat at the table. Someone could type something random and the game would prompt the user again for input. After that, once something was input to the game would start all over again. The issue here was that there were two parts of the game combined into one procedure. If the user put in the wrong response, the first if and else-if conditions would not be met and it completely skips to another part of the game. The user not knowing what was going on would immediately be asked for input again and try to meet conditions for another if and else-if statement that required a different input. Since the user would not be able to meet the requirements of the second if and else-if statement the game would start again because it didn’t have any way of continuing on with the story. I fixed this by breaking those two separate parts of the game into their own procedures. I also added an else statement at the end of those two procedures so that if the user messes up they can still try again and continue on with the game.</p>
             </div>
            <!-- Sidebar -->
             <div class="w3-sidebar w3-bar-block " style="width:15%;position:absolute;top:52px;color:blue;">
               <h3 class="w3-bar-item">Table of Contents</h3>
-              <a href="deep.html" class="w3-bar-item w3-button">Flowchart</a>
+              <a href="deep.html" class="w3-bar-item w3-button">Interactive Fiction</a>
               <a href="deep2.html" class="w3-bar-item w3-button">Video Demonstration</a>
+              <a href="deep4.html" class="w3-bar-item w3-button">Flowchart</a>
             </div>
         
     </body>
