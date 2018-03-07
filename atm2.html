@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fabian Trujillo</title>
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="description" content="Video Demonstration">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="Fabian Trujillo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+     <body>
+            <div class="container">
+              <a href="index.html">Fabian's Website</a>
+              <a href="index.html">Home</a>
+              <div class="dropdown">
+                  <button class="dropbtn" onclick="myFunction()">Portfolio</button>
+                  <div class="dropdown-content" id="myDropdown">
+                     <a href="canattack.html">App Inventor Project: Can Attack</a>
+                     <a href="deep.html">Interactive Fiction: Deep</a>
+                  </div>
+            </div> 
+            <a href="contact.html">Contact</a>
+            <a href="aboutme.html">About Me</a>
+        </div>
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+          }
+        }
+        </script>
+        </div>
+          
+
+        </div>
+            <br><br><br>
+            <div class="main">
+                <h1>Video Demonstration</h1>
+               <video width="500" controls>
+                  <source src="videos/ATM_DEMO_2.mp4" type="video/mp4">
+               </video>
+               <h2>Video Response</h2>
+               <p>In this video, I demonstrate how to create a new account on our text-based ATM program created using Python. At the start of running the program, I am presented with a welcome message. Then, I am asked to input “old” if I have an account or “new” if I don’t have an account. In this case, I don’t have an account so I type in new. Now I am asked to input my name. After I enter my name, I am greeted by the program and I am prompted to deposit some money. I deposit 2100 dollars into my account. After that, I am given several options, I have the option to check my balance, deposit money, withdraw money, transfer money, and exit to log out. I type in deposit and add 500 dollars to my current balance. Then, to make sure my balance updated from my initial balance I type balance. My balance shows that I now have 2600 on my account, therefore, it updated successfully. Now I decided that I want to take out some money. In order to do that, I enter withdraw and I am asked how much I want to withdraw. I enter 300 and just to double check I enter balance again to see if my balance was updated. The program tells me that I now have 2300 dollars so that means that the program worked properly. Now I decided that I want to transfer some money and to do that I enter transfer as input. All I need to do now is enter the name of the person I want to transfer money to. I enter Landfried and I am asked how much I want to transfer to Landfried.  I enter 1000 and I am told that the money was transferred to Landfried's account successfully. I am also told that I have 1300 left on my account. Now I am finished making the transactions I wanted to make, I log out by typing in “exit”. Now everyone else is free to login to their own account.</p>
+            </div>
+           <!-- Sidebar -->
+            <div class="w3-sidebar w3-bar-block " style="width:15%;position:absolute;top:52px;color:blue;">
+              <h3 class="w3-bar-item">Table of Contents</h3>
+               <a href="atm.html" class="w3-bar-item w3-button">Main Program</a>
+               <a href="atm3.html" class="w3-bar-item w3-button">Written Response</a>
+               <a href="atm4.html" class="w3-bar-item w3-button">Screenshots</a>
+            </div>
+        
+    </body>
+</html>

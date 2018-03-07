@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fabian Trujillo</title>
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="description" content="Written Response for ATM Program">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="Fabian Trujillo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+     <body>
+            <div class="container">
+              <a href="index.html">Fabian's Website</a>
+              <a href="index.html">Home</a>
+              <div class="dropdown">
+                  <button class="dropbtn" onclick="myFunction()">Portfolio</button>
+                  <div class="dropdown-content" id="myDropdown">
+                      <a href="canattack.html">App Inventor Project: Can Attack</a>
+                      <a href="deep.html">Interactive Fiction: Deep</a>
+                  </div>
+            </div> 
+            <a href="contact.html">Contact</a>
+            <a href="aboutme.html">About Me</a>
+        </div>
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+          }
+        }
+        </script>
+        </div>
+          
+
+        </div>
+            <br><br><br>
+            <div class="main">
+                <h1>Written Response</h1>
+                <p>We encountered an issue when it came down to creating a new account with our ATM program. When a person was logged into their account they would usually be presented with several options on which actions they can take. Under that print statement, the user’s name would display their first name and a  colon next to it (“John:”). This allowed the user’s input look cleaner (ex: “John: withdraw” instead of “Johnwithdraw”). We tried fixing this issue by concatenating a colon within the raw input statement, however, that would only take one argument. We also tried adding it to the empty list that the new name was placed in and that also gave out a syntax error. Ultimately, this issue was fixed by adding the concatenation of the colon outside of the raw input statement and not within the raw input statement itself (raw_input(name) + “:” instead of raw_input(name + “:”)).</p>
+                <p>Once the previous issue was resolved, I went through the program again to make sure it was working properly and I noticed one minor issue. I noticed that when the new user entered their name into the program shortly the program greeted them with their name. The new user’s name had a colon stuck to it when it said, “Welcome name:” for example which was unnecessary in that case. I independently resolved this issue by printing characters from index 0 to 6. That way for that one line, it would get rid of the colon, and keep it for the rest of the program for when it was necessary to keep the colon.  </p>            
+            </div>
+           <!-- Sidebar -->
+            <div class="w3-sidebar w3-bar-block " style="width:15%;position:absolute;top:52px;color:blue;">
+              <h3 class="w3-bar-item">Table of Contents</h3>
+              <a href="atm.html" class="w3-bar-item w3-button">Main Program</a>
+              <a href="atm2.html" class="w3-bar-item w3-button">Video Demonstration</a>
+              <a href="atm4.html" class="w3-bar-item w3-button">Screenshots</a>
+            </div>
+        
+    </body>
+</html>
