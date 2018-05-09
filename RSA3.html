@@ -7,12 +7,13 @@
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <meta charset="UTF-8">
-        <meta name="description" content="Interactive Fiction Flowchart">
+        <meta name="description" content="Written Response for ATM Program">
         <meta name="keywords" content="HTML,CSS,XML,JavaScript">
         <meta name="author" content="Fabian Trujillo">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
     </head>
-    <body>
+     <body>
             <div class="container">
               <a href="index.html">Fabian's Website</a>
               <a href="index.html">Home</a>
@@ -49,21 +50,18 @@
           
 
         </div>
-            <br><br>
+            <br><br><br>
             <div class="main">
-               <h1>Flowchart</h1>
-               <script type="text/javascript" language="javascript" src="https://app.creately.com/player/creately-player.js"></script>
-                <div id="creately-container-ja1dzehk1"></div>
-                <script type="text/javascript">
-                var player = new CreatelyPlayer( "creately-container-ja1dzehk1", "ja1dzehk1-lmBppyeLGJxMONUwAiZ9xlfNDw=", { width: "1510px", height: "1310px" });
-               </script>
+                <h1>Written Response</h1>
+                <p>Our program was initially set to take in words such as “encrypt, decrypt, and exit” in all lowercase letters, but when a person input “Encrypt” with a capital e the program would throw out an error. Technically, this is still the correct input with different capitalization, but the program doesn’t see it that way. To fix this issue, we created a variable after input that took the input and used the function .lower() to lowercase all the letters from the input. As a result, the program would take encrypt, decrypt or exit regardless of any form of capitalization.</p>
+                <p>Another problem that I encountered was that a person was able to stop the program by inputting a string or float when our program would ask for a,d, e, or n value. I independently resolved this situation by creating a try-except statement. In the try block, the program would continue normally if someone correctly inputs an integer value, otherwise, the program would take the user to the except statement and tell the user that they need to input an integer value. After that, the user would be prompted to start again to input integer type values.</p>            
             </div>
            <!-- Sidebar -->
             <div class="w3-sidebar w3-bar-block " style="width:15%;position:absolute;top:52px;color:blue;">
               <h3 class="w3-bar-item">Table of Contents</h3>
-              <a href="deep.html" class="w3-bar-item w3-button">Interactive Fiction</a>
-              <a href="deep3.html" class="w3-bar-item w3-button">Written Response</a>
-              <a href="deep2.html" class="w3-bar-item w3-button">Video Demonstration</a>
+              <a href="RSA.html" class="w3-bar-item w3-button">Main Program</a>
+              <a href="RSA2.html" class="w3-bar-item w3-button">Video Demonstration</a>
+              <a href="RSA4.html" class="w3-bar-item w3-button">Screenshots</a>
             </div>
         
     </body>
