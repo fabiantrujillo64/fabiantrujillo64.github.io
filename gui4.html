@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fabian Trujillo</title>
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="description" content="Abstraction/Algorithm">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="Fabian Trujillo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+     <body>
+            <div class="container">
+              <a href="index.html">Fabian's Website</a>
+              <a href="index.html">Home</a>
+              <div class="dropdown">
+                  <button class="dropbtn" onclick="myFunction()">Portfolio</button>
+                  <div class="dropdown-content" id="myDropdown">
+                      <a href="canattack.html">App Inventor Project: Can Attack</a>
+                      <a href="deep.html">Interactive Fiction: Deep</a>
+                      <a href="atm.html">Python Project: ATM Program</a>
+                      <a href="RSA.html">RSA Project</a>
+                      <a href="gui.html">Java GUI Project</a>
+                  </div>
+            </div> 
+            <a href="contact.html">Contact</a>
+            <a href="aboutme.html">About Me</a>
+        </div>
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+          }
+        }
+        </script>
+        </div>
+          
+
+        </div>
+            <br><br><br>
+            <div class="main">
+                <h1>Abstraction and Algorithm</h1>
+                <br><br>
+                <img src="images/abst_algo.PNG">
+                <br><br><br><br>
+            </div>
+           <!-- Sidebar -->
+            <div class="w3-sidebar w3-bar-block " style="width:15%;position:absolute;top:52px;color:blue;">
+              <h3 class="w3-bar-item">Table of Contents</h3>
+              <a href="gui.html" class="w3-bar-item w3-button">Main Program</a>
+              <a href="gui2.html" class="w3-bar-item w3-button">Video Demonstration</a>
+              <a href="gui3.html" class="w3-bar-item w3-button">Written Response</a>
+            </div>
+        
+    </body>
+</html>

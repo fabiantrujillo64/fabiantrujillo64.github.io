@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fabian Trujillo</title>
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="description" content="Video Demonstration">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="Fabian Trujillo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+     <body>
+            <div class="container">
+              <a href="index.html">Fabian's Website</a>
+              <a href="index.html">Home</a>
+              <div class="dropdown">
+                  <button class="dropbtn" onclick="myFunction()">Portfolio</button>
+                  <div class="dropdown-content" id="myDropdown">
+                     <a href="canattack.html">App Inventor Project: Can Attack</a>
+                      <a href="deep.html">Interactive Fiction: Deep</a>
+                      <a href="atm.html">Python Project: ATM Program</a>
+                      <a href="RSA.html">RSA Project</a>
+                      <a href="gui.html">Java GUI Project</a>
+                  </div>
+            </div> 
+            <a href="contact.html">Contact</a>
+            <a href="aboutme.html">About Me</a>
+        </div>
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+          }
+        }
+        </script>
+        </div>
+          
+
+        </div>
+            <br><br><br>
+            <div class="main">
+                <h1>Video Demonstration</h1>
+               <video width="500" controls>
+                  <source src="videos/java_gui.mp4" type="video/mp4">
+               </video>
+               <br><br>
+               <a href="https://soundcloud.com/the-chemist-10/smooth-sailing">Music in video</a>
+               <h2>Video Response</h2>
+               <p>At the beginning, I start off by going up the menu bar and clicking the account option and then dropping down to the info option. The info option will show off a message box with some basic info about the user’s account, such as their full name, account ID, and so on. As I close the message box window, I go down to the check balance button and click on it. This shows a message box with the current balance of a hundred dollars. After that, I click on the withdraw button that will show an input dialog box. The input dialog box will take the amount of money a user would like to withdraw. I type fifty dollars into the text field within the dialog box and click OK. Then, I go back up to the balance button and I successfully withdrew fifty dollars from the one hundred dollars I had initially. Soon after, I go down to the deposit button and click on it to reveal another input dialog box that will take in the amount of money that a user would like to deposit onto their account. I type in one-hundred-fifty dollars and click OK to confirm that transaction. Once again, I go back up to the check balance button and I see that I went from fifty dollars up to two-hundred dollars from my previous transaction. To finish the video off, I go back up the menu bar click on the options menu and then click on help. Help shows a message box that serves as a mini manual on how to use our program. Last but not least, I close that message box and then click on the options menu to find the about option. The about option will show who created the project, what the project was created for and who was responsible for teaching us how to create amazing things with java programming.</p>
+               <h3>Special Thanks</h3>
+               <p>Special thanks to Mr. Landfried, if you’re seeing this right now, thank you for being so inspirational and helping all of us learn all these amazing concepts that we have covered this year. We couldn’t have done it without the instruction from an amazing CS teacher. It was a lot of fun! I’ll never forget everything that you have done for me these past 3 years. </p>
+            </div>
+           <!-- Sidebar -->
+            <div class="w3-sidebar w3-bar-block " style="width:15%;position:absolute;top:52px;color:blue;">
+              <h3 class="w3-bar-item">Table of Contents</h3>
+               <a href="gui.html" class="w3-bar-item w3-button">Main Program</a>
+               <a href="gui3.html" class="w3-bar-item w3-button">Written Response</a>
+               <a href="gui4.html" class="w3-bar-item w3-button">Abstraction/Algorithm</a>
+            </div>
+        
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fabian Trujillo</title>
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="description" content="Written Response for ATM Program">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="Fabian Trujillo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+     <body>
+            <div class="container">
+              <a href="index.html">Fabian's Website</a>
+              <a href="index.html">Home</a>
+              <div class="dropdown">
+                  <button class="dropbtn" onclick="myFunction()">Portfolio</button>
+                  <div class="dropdown-content" id="myDropdown">
+                      <a href="canattack.html">App Inventor Project: Can Attack</a>
+                      <a href="deep.html">Interactive Fiction: Deep</a>
+                      <a href="atm.html">Python Project: ATM Program</a>
+                      <a href="RSA.html">RSA Project</a>
+                      <a href="gui.html">Java GUI Project</a>
+                  </div>
+            </div> 
+            <a href="contact.html">Contact</a>
+            <a href="aboutme.html">About Me</a>
+        </div>
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+          }
+        }
+        </script>
+        </div>
+          
+
+        </div>
+            <br><br><br>
+            <div class="main">
+                <h1>Written Response</h1>
+                <p>Initially, we setup a withdraw listener that created a input dialog that would take the user’s input. The original plan was to take that input from the withdraw listener and to call the withdraw function to make the transaction. However, we found out that the withdraw function could never access input due to the fact that the withdraw listener was private. Therefore, we resolved this issue by having the listener just call the withdraw function and had the withdraw function create the input dialog instead. Having the input dialog within the withdraw function instead would allow us to have easy access to what the user would input. As a result, the user’s input would allow us to successfully make the transaction within the withdraw function.</p>
+                <p>Another issue that occured is that after a transaction was processed, the current balance would not successfully update. Initially, a new balance variable was created to make a deduction from the user’s current balance in order to withdraw some cash. The new balance variable was then printed and it showed that the program was making the calculation correctly. After making the calculation, we set the current balance variable equal to the new balance variable. This was assuming that the new balance would get assigned to the current balance. However, Java refused to compile showing an error message saying the symbol was not found. Having minimal experience with Java programming, this error message was unclear. Alternatively, instead of having the current balance variable assigned to the new balance variable, I removed the new balance variable and had current balance variable make the calculation instead. Finally, the current balance would now update successfully.</p>            
+            </div>
+           <!-- Sidebar -->
+            <div class="w3-sidebar w3-bar-block " style="width:15%;position:absolute;top:52px;color:blue;">
+              <h3 class="w3-bar-item">Table of Contents</h3>
+              <a href="gui.html" class="w3-bar-item w3-button">Main Program</a>
+              <a href="gui2.html" class="w3-bar-item w3-button">Video Demonstration</a>
+              <a href="gui4.html" class="w3-bar-item w3-button">Abstraction/Algorithm</a>
+            </div>
+        
+    </body>
+</html>
